@@ -7,7 +7,7 @@ clients = []
 
 # Server configuration
 HOST = '0.0.0.0'  # Accept connections from all available network interfaces
-PORT = 12345       # Port to listen on
+PORT = 5002       # Port to listen on
 
 # Function to broadcast messages to all connected clients
 def broadcast(message, client_socket):
@@ -43,6 +43,7 @@ def handle_client(client_socket, client_address):
             # Measure the size of the received message
             message_size = len(message)
             print(f"Received message of size {message_size} bytes.")
+            print("Received message:",message.decode('utf-8'))
             end_time = time.time()  # End time for receiving the message
             print(f"Time to receive message: {end_time - start_time:.4f} seconds.")
             
