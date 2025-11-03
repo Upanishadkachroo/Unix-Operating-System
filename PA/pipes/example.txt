@@ -1,0 +1,2 @@
+Hi Upanishad kachroo 
+This year i particpated in Hacktoberfest'25:) and learnt a lot, how open source contribution works and was able to make 6+ PRs now fingers crossed whether i am able to make to the first 10k or not
