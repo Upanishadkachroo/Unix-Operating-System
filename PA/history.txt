@@ -1,0 +1,13 @@
+1. grep -i "usb" /var/log/syslog | grep "New USB device"
+2. journalctl | grep -i "usb" or journalctl -k -n 100 | grep -i usb
+
+to remove
+sudo journalctl --rotate
+sudo journalctl --vacuum-time=1s
+
+sudo truncate -s 0 /var/log/syslog
+sudo truncate -s 0 /var/log/kern.log
+sudo truncate -s 0 /var/log/messages 2>/dev/null
+
+sudo rm -rf /run/udev/data/*
+1. 
