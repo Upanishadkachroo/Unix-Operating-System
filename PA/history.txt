@@ -10,4 +10,5 @@ sudo truncate -s 0 /var/log/kern.log
 sudo truncate -s 0 /var/log/messages 2>/dev/null
 
 sudo rm -rf /run/udev/data/*
-1. 
+1. sudo ./clear_usb_history.sh
+//to run the bash 
