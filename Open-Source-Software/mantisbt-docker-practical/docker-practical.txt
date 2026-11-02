@@ -1,0 +1,14 @@
+MantisBT - FOSS Bug Tracking Tool
+
+Purpose:
+Demonstrate bug tracking using MantisBT inside Docker.
+
+Features:
+- Report software defects
+- Assign bugs to users
+- Set bug priority and severity
+- Track issue status
+- Add comments and monitor progress
+
+Deployment:
+Docker container with MariaDB database.

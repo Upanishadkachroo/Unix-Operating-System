@@ -1,0 +1,47 @@
+services:
+  mantisbt:
+    build: .
+    image: ${DOCKERHUB_USER}/mantisbt-foss-demo:v1
+    container_name: mantisbt-web
+
+    ports:
+      - "8989:80"
+
+    environment:
+      MANTIS_TIMEZONE: Asia/Kolkata
+      MANTIS_ENABLE_ADMIN: "1"
+
+    volumes:
+      - ./config:/var/www/html/config
+      - ./custom:/var/www/html/custom
+
+    depends_on:
+      db:
+        condition: service_healthy
+
+    restart: unless-stopped
+
+  db:
+    image: mariadb:10.11
+    container_name: mantisbt-db
+
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpass123
+      MARIADB_DATABASE: bugtracker
+      MARIADB_USER: mantisbt
+      MARIADB_PASSWORD: mantispass123
+
+    volumes:
+      - mantis-db-data:/var/lib/mysql
+
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+    restart: unless-stopped
+
+volumes:
+  mantis-db-data:

@@ -1,0 +1,23 @@
+services:
+
+  server:
+    build: ./server
+    image: upanishad/socket-server:v1
+    container_name: socket-server
+    ports:
+      - "5000:5000"
+    networks:
+      - socket-network
+
+  client:
+    build: ./client
+    image: upanishad/socket-client:v1
+    container_name: socket-client
+    depends_on:
+      - server
+    networks:
+      - socket-network
+
+networks:
+  socket-network:
+    driver: bridge
