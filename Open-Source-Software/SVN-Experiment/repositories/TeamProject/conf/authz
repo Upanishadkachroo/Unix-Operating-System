@@ -1,0 +1,28 @@
+[groups]
+team-leaders = leader
+coders = coder1,coder2
+
+[TeamProject:/]
+leader = rw
+coder1 = r
+coder2 = r
+
+[TeamProject:/trunk]
+leader = rw
+coder1 = r
+coder2 = r
+
+[TeamProject:/branches/coder1-feature]
+leader = rw
+coder1 = rw
+coder2 = r
+
+[TeamProject:/branches/coder2-feature]
+leader = rw
+coder1 = r
+coder2 = rw
+
+[TeamProject:/tags]
+leader = rw
+coder1 = r
+coder2 = r
