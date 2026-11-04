@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/opencalc.dir/src/main.cpp.o CMakeFiles/opencalc.dir/src/calculator.cpp.o -o opencalc 

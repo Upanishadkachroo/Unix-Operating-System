@@ -1,0 +1,7 @@
+/home/upanishad/RPM-Experiment/OpenCalc/build/CMakeFiles/opencalc.dir
+/home/upanishad/RPM-Experiment/OpenCalc/build/CMakeFiles/edit_cache.dir
+/home/upanishad/RPM-Experiment/OpenCalc/build/CMakeFiles/rebuild_cache.dir
+/home/upanishad/RPM-Experiment/OpenCalc/build/CMakeFiles/list_install_components.dir
+/home/upanishad/RPM-Experiment/OpenCalc/build/CMakeFiles/install.dir
+/home/upanishad/RPM-Experiment/OpenCalc/build/CMakeFiles/install/local.dir
+/home/upanishad/RPM-Experiment/OpenCalc/build/CMakeFiles/install/strip.dir

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 05 Nov 2026 08:00:00 +0530
+Source: xml-inspector
+Binary: xml-inspector
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Student <student@example.com>
+Changed-By: Student <student@example.com>
+Description:
+ xml-inspector - XML inspection utility using TinyXML-2
+Changes:
+ xml-inspector (1.0.0-1) unstable; urgency=medium
+ .
+   * Initial Debian package.
+   * Added XML inspection functionality.
+   * Used TinyXML-2 for XML parsing.
+Checksums-Sha1:
+ e61e1524f9e157100c422b71cdca4dfd0623000e 7566 xml-inspector_1.0.0-1_amd64.buildinfo
+ 7c172ae4b5bd499677f334a19b8031df326df18d 49604 xml-inspector_1.0.0-1_amd64.deb
+Checksums-Sha256:
+ 6651db35d4538cd95800eaaedafe6fcce44a21ebf84fa5eabfd30fd6fceaaf97 7566 xml-inspector_1.0.0-1_amd64.buildinfo
+ 168174450c1e49b602d3efc1afdd8d656200a64d71ef276c30292d7fe61e48cc 49604 xml-inspector_1.0.0-1_amd64.deb
+Files:
+ 6772deb55577ac5e843f0462ab0576bf 7566 utils optional xml-inspector_1.0.0-1_amd64.buildinfo
+ 3cb60efff112e5f4ced9cdf6efef7a91 49604 utils optional xml-inspector_1.0.0-1_amd64.deb
